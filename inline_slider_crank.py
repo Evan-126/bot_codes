@@ -62,6 +62,14 @@ def slider_acceleration(L2, L3, t2, omega, delta_t=1e-4):
 
 
 if __name__ == "__main__":
+    '''
+    input known values here:
+    L2 = crank length
+    L3 = rod length
+    omega = angular velocity
+    angles = angle between crank and + x-axis (numpy array)
+    '''
+    
     L2, L3 = 0.031, 0.023
     omega = 1  # rad/s
     angles = np.linspace(140, 179, 500)
